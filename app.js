@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded' , () => {
 
     function generateObstacle() {
         let obstacleLeft = 500
-        let randomHeight = Math.random() * 40
+        let randomHeight = Math.random() * 40;
         let obstacleBottom = randomHeight
         const obstacle = document.createElement('div')
         const topObstacle = document.createElement('div')
@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         document.removeEventListener('keyup', control)
         ground.classList.add('ground')
         ground.classList.remove('ground-moving')
+        window.alert("Game Over! Recarregue a página e tente novamente")
     }
 
 
